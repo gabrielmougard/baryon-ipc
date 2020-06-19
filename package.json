@@ -1,0 +1,37 @@
+{
+  "name": "@gabrielmougard/baryon-ipc",
+  "description": "Baryon Inter-Process-Communication",
+  "author": "Gabriel Mougard <gabriel.mougard@gmail.com>",
+  "version": "1.0.0",
+  "scripts": {
+    "test": "xvfb-maybe electron-mocha"
+  },
+  "dependency-check": {
+    "ignore": [
+      "electron"
+    ]
+  },
+  "bugs": "https://github.com/gabrielmougard/baryon-ipc/issues",
+  "homepage": "https://github.com/gabrielmougard/baryon-ipc",
+  "publishConfig": { 
+    "registry": "https://npm.pkg.github.com/",
+    "access": "restricted" 
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gabrielmougard/baryon-ipc.git"
+  },
+  "dependencies": {
+    "debug": "^4.1.1",
+    "is-electron-renderer": "^2.0.0",
+    "is-promise": "^2.1.0",
+    "lodash.forin": "^4.4.0",
+    "lodash.isplainobject": "^4.0.6"
+  },
+  "devDependencies": {
+    "electron": "^8.0.0",
+    "electron-mocha": "^8.2.0",
+    "xvfb-maybe": "^0.2.1"
+  },
+  "license": "ISC"
+}
